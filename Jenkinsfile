@@ -11,14 +11,12 @@ pipeline {
             }
         }
 
-        
          stage('Compile') {
             steps {
                 sh 'mvn test'
             }
         }
 
-        
          stage('Build') {
             steps {
                 sh 'mvn package'
